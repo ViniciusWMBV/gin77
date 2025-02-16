@@ -125,7 +125,6 @@ header h1 {
 /* Menu inferior */
 .menu {
     background: #A00;
-    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -357,3 +356,24 @@ header h1 {
 .titulojogo{
     width: 200px;
 }
+
+
+/* Para dispositivos desktop (largura maior que 768px) */
+@media (min-width: 768px) {
+    body {
+      display: none;
+    }
+  }
+  
+  /* Para dispositivos móveis (largura até 768px) */
+  @media (max-width: 768px) {
+    body {
+      display: block;
+    }
+  }
+  
+
+  .icone-menu{
+    width: 50px;
+    margin: 12px;
+  }
