@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIN77</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="./img/icon.ico">
+</head>
+<body>   
+    <div class="menu-topo">
+        <!-- Barra de pesquisa e título -->
+        <header>
+            <img class="logo" src="./img/logo.png">   
+        </header>
+    </div>
+
+    <!-- Saldo do usuário -->
+    <div class="saldo-container" id="saldo-container">
+        <span>💰 R$<span id="saldo">0,00</span></span>
+    </div>
+
+    <!-- Banner principal -->
+    <section class="banner">
+        <img class="carrossel" src="./img/carrosel.gif">
+    </section>
+    </section>
+    <img class="slogan" src="./img/A-sorte-est-ao-seu-lado-16-02-2025.png">
+    <section class="ganhadores">
+        <img src="./img/cacaniquel.gif" alt="">
+        <div class="marquee-container">
+            <div class="marquee">
+                <span>Neste momento, milhares de jogadores estão ganhando grandes prêmios! 🏆💸</span>
+            </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- Jogos -->
+    <section class="jogos">
+        <h3>JOGOS</h3>
+        <div class="categorias">
+            <button><img src="./img/fogo.gif"> POPULAR</button>
+            <button>🎰 SLOTS</button>
+            <button>⭐ FAVORITOS</button>
+        </div>
+        <div class="jogos-lista">
+            <img src="./img/snake.jpg" alt="Fortune Snake">
+            <img src="./img/tigrinho.png" alt="Tigrinho">
+            <img src="./img/roleta.jpg" alt="Roleta">
+        </div> 
+        <div class="jogos-lista2">
+            <img src="./img/aviator.jpg" alt="Aviator">
+            <img src="./img/rubbit.jpeg" alt="Rubbit">
+            <img src="./img/ox.jpeg" alt="Ox">
+        </div>
+    </section>
+
+    <!-- Menu inferior -->
+    <nav class="menu">
+        
+    </nav>
+
+    <!-- Pop-up de login -->
+    <div id="login-popup">
+        <div class="login-container">
+            <button class="close-btn">✖</button>
+            <h1>GIN77</h1>
+            <p>--- LOGIN ---</p>
+
+            <label for="telefone">TELEFONE</label>
+            <div class="input-box">
+                <span>📞</span>
+                <input type="tel" id="telefone" placeholder="Digite seu telefone">
+            </div>
+
+            <label for="senha">SENHA</label>
+            <div class="input-box">
+                <span>🔒</span>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+            </div>
+
+            <button id="login-btn">ENTRAR</button>
+            <p class="cadastro">CADASTRE-SE</p>
+        </div>
+    </div>
+
+    
+    <!-- Pop-up de depósito -->
+    <div id="deposit-popup">
+        <div class="deposit-container">
+            <button class="close-btn" onclick="closeDepositPopup()">✖</button>
+            <h1>DEPÓSITO</h1>
+
+            <label for="valor-deposito">VALOR</label>
+            <div class="input-box">
+                <span>💵</span>
+                <input type="number" id="valor-deposito" placeholder="Digite o valor">
+            </div>
+
+            <button id="deposit-btn" onclick="generatePix()">DEPOSITAR</button>
+
+            <!-- Exibir a chave PIX gerada -->
+            <div id="pix-result" style="display: none; margin-top: 10px;">
+                <p><strong>PIX Gerado:</strong></p>
+                <textarea id="pix-info" readonly style="width: 100%; height: 100px; margin-top: 10px;"></textarea>
+                <button id="copy-btn" onclick="copyPix()">Copiar PIX</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
