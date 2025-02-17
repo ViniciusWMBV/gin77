@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fechar o pop-up ao clicar no botão de fechar
     closeBtn.addEventListener("click", () => {
         loginPopup.style.display = "none";
+        document.getElementById('popular').hidden=false;
+        document.getElementById('slots').hidden=true;
+         document.getElementById('favoritos').hidden=true; 
     });
 
     // Simular carregamento de saldo do usuário
@@ -60,14 +63,25 @@ function popular(){
  
 }
 
+    var ConfimFav = false;
+
 function slots(){
     document.getElementById('popular').hidden=true
     document.getElementById('slots').hidden=false;
     document.getElementById('favoritos').hidden=true;
 }
 
-function favoritos(){
+        
+    function favoritos(){
+    
     document.getElementById('popular').hidden=true;
     document.getElementById('slots').hidden=true;
     document.getElementById('favoritos').hidden=false;
+    
+    if (ConfirmFav) {
+        
+      } else {
+        document.getElementById('semfav').hidden=true
+      }
+
 }
