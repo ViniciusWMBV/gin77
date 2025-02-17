@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Mostrar o pop-up ao carregar
     loginPopup.style.display = "flex";
+    document.getElementById('cadastro').hidden=true;
 
     // Fechar o pop-up ao clicar no botão de fechar
     closeBtn.addEventListener("click", () => {
@@ -84,4 +85,18 @@ function slots(){
         document.getElementById('semfav').hidden=true
       }
 
+}
+
+    var usuariologado = false;
+
+function perfil(){
+    if (usuariologado) {
+        
+    } else {
+       
+        loginPopup.style.display = "flex";
+}}
+
+function cadastro(){
+    
 }

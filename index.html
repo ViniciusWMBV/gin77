@@ -89,7 +89,7 @@
         <img class="icone-menu" style="margin: 8px;" src="./img/icon/promocao.png">
         <img class="icone-menu" style="margin: 8px;" src="./img/icon/agente.png">
         <img class="icone-menu" style="margin: 8px;" src="./img/icon/suporte.png">
-        <img class="icone-menu" style="margin: 8px;" src="./img/icon/perfil.png">
+        <img class="icone-menu" id="perfil" style="margin: 8px;" src="./img/icon/perfil.png">
         
     </nav>
     <!-- Pop-up de login -->
@@ -112,7 +112,34 @@
             </div>
 
             <button id="login-btn">ENTRAR</button>
-            <p class="cadastro">CADASTRE-SE</p>
+            <button onclick="cadastro()" class="cadastro">CADASTRE-SE</button>
+        </div>
+    </div>
+
+     <!-- Pop-up de cadastro-->
+     <div id="cadastro">
+        <div class="login-container">
+            <button class="close-btn">✖</button>
+            <h1>GIN77</h1>
+            <p>--- CADASTRE-SE ---</p>
+            <label for="telefone">TELEFONE</label>
+            <div class="input-box">
+                <span>📞</span>
+                <input type="tel" id="telefone" placeholder="Digite seu telefone">
+            </div>
+
+            <label for="senha">SENHA</label>
+            <div class="input-box">
+                <span>🔒</span>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+            </div>
+            <label for="rpsenha">REPITA SUASENHA</label>
+            <div class="input-box">
+                <span>🔒</span>
+                <input type="password" id="senha" placeholder="Digite novamente sua senha">
+            </div>
+            <button id="cadastrar-btn">Cadastrar</button>
+            <button onclick="cadastro()" class="cadastro">CADASTRE-SE</button>
         </div>
     </div>
 
