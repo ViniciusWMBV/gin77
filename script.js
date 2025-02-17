@@ -53,3 +53,21 @@ function copyPix() {
 
 
 
+function popular(){
+    document.getElementById('popular').hidden=false;
+    document.getElementById('slots').hidden=true;
+    document.getElementById('favoritos').hidden=true;
+ 
+}
+
+function slots(){
+    document.getElementById('popular').hidden=true
+    document.getElementById('slots').hidden=false;
+    document.getElementById('favoritos').hidden=true;
+}
+
+function favoritos(){
+    document.getElementById('popular').hidden=true;
+    document.getElementById('slots').hidden=true;
+    document.getElementById('favoritos').hidden=false;
+}
