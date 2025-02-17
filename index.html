@@ -43,10 +43,13 @@
     <section class="jogos">
         <img style="width:20%" src="./img/Jogos-16-02-2025.png">
         <div class="categorias">
-            <button><img src="./img/fogo.gif"> POPULAR</button>
-            <button> <img src="./img/wheel.png.png">SLOTS</button>
+           
+            
+           <button onclick="document.getElementById('popular').hidden=false"><img src="./img/fogo.gif"> POPULAR</button>
+            <button onclick="document.getElementById('popular' ).hidden=true"> <img src="./img/wheel.png.png">SLOTS</button>
             <button> <img src="./img/wheel.png"> FAVORITOS</button>
         </div>
+        <div class="populares" id="popular">
         <div class="jogos-lista">
             <img src="./img/snake.jpg" alt="Fortune Snake">
             <img src="./img/tigrinho.png" alt="Tigrinho">
@@ -56,7 +59,7 @@
             <img src="./img/aviator.jpg" alt="Aviator">
             <img src="./img/rubbit.jpeg" alt="Rubbit">
             <img src="./img/ox.jpeg" alt="Ox">
-        </div>
+        </div></div> 
     </section>
 
     <!-- Menu inferior -->

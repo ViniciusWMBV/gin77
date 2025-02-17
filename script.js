@@ -50,3 +50,6 @@ function copyPix() {
     document.execCommand('copy'); // Copia para a área de transferência
     alert('Chave PIX copiada com sucesso!');
 }
+
+
+
